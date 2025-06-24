@@ -4,9 +4,7 @@
       const linha = document.createElement("p");
 
       
-      //botao.addEventListener("click", function () {
-      //  soma();
-      // });
+      
 
       function soma() {
         let data1 = document.getElementById("data1");
@@ -22,7 +20,7 @@
         } dias`;
         resultado.appendChild(linha);
 
-        //limpa o calendario
+        //para limpar o calendario
         for (let i = 0; i < itens.length; i++) {
           itens[i].style.backgroundColor = "transparent";
           itens[i].style.color = "black";
@@ -40,8 +38,8 @@
         }
         for (let i = data1; i <= data2; i++) {
           if (itens[i].textContent > data1) {
-            itens[i].style.backgroundColor = "blue";
-            itens[i].style.color = "white";
+            itens[i].style.backgroundColor = "green";
+            itens[i].style.color = "gray";
           }
         }
       }
